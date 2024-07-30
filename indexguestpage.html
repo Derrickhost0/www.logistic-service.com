@@ -1,0 +1,303 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="">
+    <title>Guest</title>
+    <style>
+        body{
+            width: 100%;
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+
+        /* HTML: <div class="loader"></div> */
+
+        /* HTML: <div class="loader"></div> */
+/* HTML: <div class="loader"></div> */
+.loader {
+  width: 40px;
+  aspect-ratio: 1;
+  position: relative;
+  transform: rotate(45deg);
+}
+.loader:before,
+.loader:after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 50% 50% 0 50%;
+  background: #514b82;
+  -webkit-mask: radial-gradient(circle 10px at 50% 50%,#0000 94%,#000);
+}
+.loader:after {
+  animation: l6 1s infinite;
+  transform: perspective(300px) translateZ(0px)
+}
+@keyframes l6 {
+  to {transform: perspective(300px) translateZ(150px);opacity:0}
+}
+    </style>
+</head>
+<body>
+
+
+    <div class="container"
+    style="display: grid;
+    gap: 6rem;
+    
+    "
+    >
+<div class="box1" 
+style="display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+text-align: center;
+background:linear-gradient(100deg,#5f3251,#cc5525);
+width: 100%;
+top: 0;
+color: white;
+height: 48vh;
+border-bottom-left-radius: 30%;
+border-bottom-right-radius: 30%;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+"
+>
+        <!-- <div class="back" 
+        style="padding: 10px;
+        width: 15%;
+        font-size: 2rem;
+        box-shadow: 3px 4px 7px 3px rgb(197, 191, 191);
+        /* padding-left: 0px; */
+        align-items: center;
+        text-align: center;
+        border-radius: 10px;
+        color:linear-gradient(100deg,#5f3251,#cc5525);
+        "
+        >
+          <a href="index.html" 
+          style="color: white;
+          text-decoration: none;"
+          > <ion-icon name="chevron-back-outline"></ion-icon></a> 
+        </div> -->
+
+        <div class="txt">
+        <h4
+        style="font-size: 2rem;"
+        > Welcome Back</h4>
+        <p 
+        style="font-size: 10px;"
+        >Update is avaliable for version 12.8 now</p>
+    </div>
+
+    <div class="cop">
+
+
+        <div class="in">
+        <input
+        onclick="copy()" 
+        style="border-radius: 10px;
+        padding: 5px;
+        border: none;
+        outline: none;
+        "
+        type="text" placeholder="D975G22">
+        <p
+        style="font-size: 12px;"
+        id="demo2"
+        > Click to copy Bonus Code for 20% discount </p>
+    </div>
+
+
+    <div class="icon">
+
+    </div>
+
+    </div>
+
+    </div>
+
+<div class="box2"
+style="width: 100%;
+height:50%;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+"
+>
+    <div class="in2"
+    style="width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    "
+
+    >
+        <input 
+        required
+        style="width: 90%;
+        padding: 20px;
+        border-radius: 10px;
+        border: 1px solid gray;
+        outline: none;
+        font-size: 15px;
+        "
+        type="text" name="" id="pwsssd" maxlength="" placeholder="eg.DE06****L">
+        <p 
+        style="
+        font-size: 10px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        text-align: start;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        padding-right: 13rem;
+        font-weight: 600;
+        "
+        id="demo"
+        >Input your serial Code </p>
+    </div>
+
+
+    <div class="bbn" 
+    style="display: flex;
+    width: 100%;
+    padding-left: 40px;
+    "
+    >
+    <button 
+    onclick="openin()"
+    style="padding: 20px;
+    width: 30%;
+    color: white;
+    background:linear-gradient(100deg,#5f3251,#cc5525); 
+    border-radius:10px;
+    border: none;
+    outline: none;
+    "
+    >Track</button>
+
+
+    
+
+    </div>
+    <div class="ppg" 
+    style="width: 70%;
+    font-size: 12px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    "
+    >
+        <!-- <p>Shipping logistics refers to all the inbound and outbound logistics involved in transporting finished goods as they move through your supply chain, from first-mile delivery and drayage to end customer shipments.</p> -->
+    </div>
+
+   
+    <div class="warn"
+    style="bottom: 0;
+    width: 80%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    "
+     >
+        <p 
+        style="font-size: 10px;
+        font-family: Arial, Helvetica, sans-serif;
+        "
+        > <span
+            style="color: red;"
+            >WARNING:</span>This website is 30% secured due to cyber reconnaissance please make sure your follow your mentor instruction and fill in the correct information for better service</p>
+    
+    
+            <div id="showpage" 
+            style="width: 80%;
+               background:linear-gradient(100deg,#5f3251,#cc5525);
+               padding: 15px;
+               border-radius: 20px;
+               color: whitesmoke;
+               font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+               position: absolute;
+    z-index: 3;
+    top: 300;
+    visibility: hidden;
+            "
+            >
+                <p 
+                style="font-size: 13px;"
+                >Allow LOGISTIC SERVICE to access your location</p>
+                <div class="all" 
+                style="display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 5rem;
+                "
+                >
+               <a
+               style="background-color: white;
+               padding: 8px;
+               text-decoration: none;
+               color: black;
+               border-radius: 5px;
+    
+    "
+                href="index.landpage.html">Allow</a>
+               <a 
+               style="background-color: white;
+               padding: 8px;
+               text-decoration: none;
+               color: black;
+               border-radius: 5px;
+               "
+                href="index.landpage.html">Deny</a>
+            </div>
+            </div>
+    </div>
+    
+
+
+</div>
+
+<div id="box3" 
+style="position: absolute;
+bottom: 0;
+width: 100%;
+background-color: white;
+height: 70vh;
+border-top-left-radius: 10%;
+border-top-right-radius: 10%;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+visibility: hidden;
+"
+>
+
+
+
+<h2 
+style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:linear-gradient(100deg,#5f3251,#cc5525); 
+"
+
+id="demopp"
+>Tracking your package</h2>
+<div class="loader"></div>
+
+
+</div>
+
+    </div>
+    <script src="main.js"></script>
+
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

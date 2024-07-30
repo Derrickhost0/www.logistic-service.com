@@ -1,0 +1,233 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+
+        
+        .loader {
+  width: 50px;
+  aspect-ratio: 1;
+  /* box-shadow: 0 0 0 3px #000000 inset; */
+  border-radius: 50%;
+  position: relative;
+  animation: l8-0 1.5s linear infinite;
+  background:linear-gradient(100deg,#5f3251,#cc5525); 
+  
+}
+.loader:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: calc(100% + 2px);
+  box-shadow: inherit;
+  width: 25px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  animation: l8-1 1.5s linear infinite;
+  background:linear-gradient(100deg,#5f3251,#cc5525); 
+
+}
+@keyframes l8-1 {
+  0% {
+    transform-origin: -27px 50%;
+    width: 20px;
+    transform: translateY(-50%) rotate(0);
+  }
+  100% {
+    transform-origin: -12px 50%;
+    width: 50px;
+    transform: translateY(-50%) rotate(180deg);
+  }
+}
+@keyframes l8-0 {
+  0% {
+    width: 50px;
+    transform: translate(0);
+  }
+  100% {
+    width: 20px;
+    transform: translate(37px);
+  }
+}
+
+    </style>
+</head>
+<body>
+
+
+
+
+
+
+    
+<!--             
+    <div id="log"
+    style="
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    visibility:visible;
+    /* position: relative; */
+    width: 100%;
+    position: relative;
+    /* bottom: 0; */
+    width: 100%;
+    height: 100%;
+    
+    "
+    >
+    
+    <div class="loader"></div>
+    
+    
+    
+    </div>
+ -->
+
+
+    <div id="container" 
+    style="width: 100%;
+    position: absolute;
+    top: 0;
+    /* visibility: hidden; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    "
+    >
+
+
+        <div class="box" 
+        style="display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            width: 100%;
+            font-weight: 600;
+            height: 80vh;
+            "
+        >
+            <h2 
+            style="color: rgb(43, 178, 231);"
+            >Payment Method</h2>
+
+            <div class="btns" 
+            style="display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap: 1rem;
+            width: 100%;
+            "
+            >
+                <a
+                style=" 
+                background-color: rgb(245, 246, 247);
+                width: 80%;
+                padding: 25px;
+                text-decoration: none;
+                box-shadow: 1px 1px 4px 3px rgb(216, 211, 211);
+                color: black;
+                border-radius: 10px;
+                "
+                 href="index.bank.html">Bank</a>
+                <a
+                style=" 
+                background-color: rgb(245, 246, 247);
+                width: 80%;
+                padding: 25px;
+                text-decoration: none;
+                box-shadow: 1px 1px 4px 3px rgb(216, 211, 211);
+                color: black;
+                border-radius: 10px;
+                "
+                 href="">Zelle</a>
+                <a 
+                style=" 
+                background-color: rgb(245, 246, 247);
+                width: 80%;
+                padding: 25px;
+                text-decoration: none;
+                box-shadow: 1px 1px 4px 3px rgb(216, 211, 211);
+                color: black;
+                border-radius: 10px;
+                "
+                href="index.bitcoin.html">Bitcoin</a>
+                <a 
+                style=" 
+                background-color: rgb(245, 246, 247);
+                width: 80%;
+                padding: 25px;
+                text-decoration: none;
+                box-shadow: 1px 1px 4px 3px rgb(216, 211, 211);
+                color: black;
+                border-radius: 10px;
+                "
+                href="">Paypal</a>
+                <a 
+                style=" 
+                background-color: rgb(245, 246, 247);
+                width: 80%;
+                padding: 25px;
+                text-decoration: none;
+                box-shadow: 1px 1px 4px 3px rgb(216, 211, 211);
+                color: black;
+                border-radius: 10px;
+                "
+                href="index.steamcard.html">Steam Card</a>
+            </div>
+
+        </div>
+
+        
+        <div class="bottom" 
+        style="width: 100%;
+        /* position: absolute; */
+        bottom: 0;
+        z-index: 1;
+        background:linear-gradient(100deg,#5f3251,#cc5525); 
+        height: 20vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        border-top-left-radius: 50px;
+        border-top-right-radius: 50px;
+        font-size: 2rem;
+        "
+        >
+            <p>TOTAL=$2,500</p>
+        </div>
+
+
+    </div>
+
+    <script>
+
+        setInterval(load,8000);
+        
+        function load() {
+            document.getElementById("container")
+            .style.visibility="visible";
+            document.getElementById("log")
+            .style.visibility="hidden";
+        }
+            
+        </script>
+    
+
+
+</body>
+</html>

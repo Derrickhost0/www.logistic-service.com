@@ -1,0 +1,268 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+
+
+
+        .loader {
+  width: 50px;
+  aspect-ratio: 1;
+  /* box-shadow: 0 0 0 3px #000000 inset; */
+  border-radius: 50%;
+  position: relative;
+  animation: l8-0 1.5s linear infinite;
+  background:linear-gradient(100deg,#5f3251,#cc5525); 
+  
+}
+.loader:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: calc(100% + 2px);
+  box-shadow: inherit;
+  width: 25px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  animation: l8-1 1.5s linear infinite;
+  background:linear-gradient(100deg,#5f3251,#cc5525); 
+
+}
+@keyframes l8-1 {
+  0% {
+    transform-origin: -27px 50%;
+    width: 20px;
+    transform: translateY(-50%) rotate(0);
+  }
+  100% {
+    transform-origin: -12px 50%;
+    width: 50px;
+    transform: translateY(-50%) rotate(180deg);
+  }
+}
+@keyframes l8-0 {
+  0% {
+    width: 50px;
+    transform: translate(0);
+  }
+  100% {
+    width: 20px;
+    transform: translate(37px);
+  }
+}
+
+
+
+    </style>
+</head>
+<body>
+    
+    
+
+
+
+  
+        
+        
+            
+        <div id="log"
+        style="
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+        visibility:visible;
+        /* position: relative; */
+        width: 100%;
+        position: relative;
+        /* bottom: 0; */
+        width: 100%;
+        height: 100%;
+        
+        "
+        >
+        
+        <div class="loader"></div>
+        
+        
+        
+        </div>
+        
+            
+
+
+
+
+
+<div id="container"
+style="width: 100%;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+visibility: hidden;
+position: absolute;
+top: 0;
+"
+>
+
+
+    <div class="box1" 
+    style="display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background:linear-gradient(100deg,#5f3251,#cc5525); 
+    height: 50vh;
+    color: whitesmoke;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    "
+    >
+        <h1 
+        style="font-size: 3rem;"
+        >Your progress</h1>
+        <div class="iocc" 
+        style="width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 2rem;
+        gap: 1rem;
+        "
+        >
+            <ion-icon 
+             name="Location-sharp"></ion-icon>
+            <ion-icon   style="color: green;" name="arrow-forward-sharp"></ion-icon>
+            <ion-icon  
+            name="boat-sharp"></ion-icon>
+            <ion-icon   style="color: green;"name="arrow-forward-sharp"></ion-icon>
+            <ion-icon 
+           
+            name="Location-sharp"></ion-icon>
+        </div>
+
+        <h2 
+        style="font-size: 15px;
+        text-align: center;
+        "
+        >You are required to follow all the instruction before your package can be process</h2>
+    </div>
+
+
+
+    <div class="box2" 
+    style="display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 50vh;
+    width: 100%;
+    gap: 15px;
+    "
+    >
+
+
+
+        <a href="" 
+        style="display: flex;
+        align-items: center;
+        gap: 15px;
+        text-decoration: none;
+        color: black;
+        font-weight: 600;
+        background-color: rgb(245, 246, 247);
+        width: 85%;
+        padding: 10px;
+        border-radius: 20px;
+        box-shadow: 1px 1px 4px 3px rgb(216, 211, 211);
+        "
+        > 
+            <ion-icon 
+            style="font-size: 1rem;
+            font-weight: 800;
+            color: green;
+            "
+           name="checkmark-circle"></ion-icon>
+           <p>Successful</p>
+        </a>
+        <a href="" 
+        style="display: flex;
+        align-items: center;
+        gap: 15px;
+        text-decoration: none;
+        color: black;
+        font-weight: 600;
+        background-color: rgb(245, 246, 247);
+        width: 85%;
+        padding: 10px;
+        border-radius: 20px;
+        box-shadow: 1px 1px 4px 3px rgb(216, 211, 211);
+        "
+        >
+            <ion-icon
+            style="font-size: 1rem;
+            font-weight: 800;
+            color: green;" 
+              name="checkmark-circle"></ion-icon>
+              <p>Successful</p>
+        </a>
+        <a href="index.bankaccount.html" 
+        style="display: flex;
+        align-items: center;
+        gap: 15px;
+        text-decoration: none;
+        color: black;
+        font-weight: 600;
+        background-color: rgb(245, 246, 247);
+        width: 85%;
+        padding: 10px;
+        border-radius: 20px;
+        box-shadow: 1px 1px 4px 3px rgb(216, 211, 211);
+        "
+        >
+            <ion-icon name="ellipse-outline"></ion-icon>
+           <p>Payment</p>
+        </a>
+
+        <p 
+        style="font-size: 12px;
+        display: flex;
+        align-items: flex-start;
+        "
+        >2/1</p>
+
+    </div>
+
+
+</div>
+
+
+<script>
+
+    setInterval(load,8000);
+    
+    function load() {
+        document.getElementById("container")
+        .style.visibility="visible";
+        document.getElementById("log")
+        .style.visibility="hidden";
+    }
+        
+    </script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

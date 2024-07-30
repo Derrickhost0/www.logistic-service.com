@@ -1,0 +1,378 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            width: 100%;
+            /* bottom: 0; */
+        }
+
+
+        .loader {
+  width: 50px;
+  aspect-ratio: 1;
+  /* box-shadow: 0 0 0 3px #000000 inset; */
+  border-radius: 50%;
+  position: relative;
+  animation: l8-0 1.5s linear infinite;
+  background:linear-gradient(100deg,#5f3251,#cc5525); 
+  
+}
+.loader:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: calc(100% + 2px);
+  box-shadow: inherit;
+  width: 25px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  animation: l8-1 1.5s linear infinite;
+  background:linear-gradient(100deg,#5f3251,#cc5525); 
+
+}
+@keyframes l8-1 {
+  0% {
+    transform-origin: -27px 50%;
+    width: 20px;
+    transform: translateY(-50%) rotate(0);
+  }
+  100% {
+    transform-origin: -12px 50%;
+    width: 50px;
+    transform: translateY(-50%) rotate(180deg);
+  }
+}
+@keyframes l8-0 {
+  0% {
+    width: 50px;
+    transform: translate(0);
+  }
+  100% {
+    width: 20px;
+    transform: translate(37px);
+  }
+}
+
+
+    </style>
+</head>
+<body>
+
+
+
+    <div id="log2"
+    style="
+    display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+align-content: center;
+    visibility: visible;
+    position: absolute;
+    width: 100%;
+    /* position: relative; */
+    /* bottom: 0; */
+    width: 100%;
+    height: 100%;
+    "
+    >
+
+    <div class="loader"></div>
+
+
+    
+</div>
+
+
+
+<!--  -->
+
+    <div id="container" 
+    style="display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    position: relative;
+    visibility: hidden;
+    "
+
+
+    >
+
+
+
+    <div id="notice" 
+    style="position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    padding-top: 10px;
+    "
+    >
+
+
+      <div id="bb"  
+      style="
+       background:linear-gradient(100deg,#5f3251,#cc5525);
+      width: 90%;
+      color: white;
+      padding: 10px;
+      visibility: hidden;
+      border-radius: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      "
+      >
+
+
+        <p
+        style="width: 90%;"
+        >Allow logistics service shipping to ping your Email for better service</p>
+        <div class="bbnt" 
+        style="display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 5rem;
+        "
+        >
+          <a 
+          style="text-decoration: none;
+          background-color: white;
+          color: black;
+          padding: 10px;
+          border-radius: 5px;
+          " 
+          href="index.fontpageload.html">Accept</a>
+          <a 
+          style="text-decoration: none;
+          background-color: white;
+          color: black;
+          padding: 10px;
+          border-radius: 5px;"
+          href="index.fontpageload.html">Deny</a>
+        </div>
+
+
+      </div>
+
+    </div>
+
+
+
+
+        <div class="boxx1" 
+        style="
+        /* background-image: url(MSC-Somar-sailing-in-the-sunset.jpg); */
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        /* height: 50%; */
+        width: 100%;
+
+        "
+        >
+
+        <div class="header"
+        style="display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding-top: 1rem;
+        gap: 10rem;
+        "
+        >
+            <ion-icon 
+            style="
+             color: rgb(145, 40, 40);
+            font-size: 2rem;
+            "
+            name="map-sharp"></ion-icon>
+            <img
+            style="border-radius: 50%;
+            "
+            src="Bd-y_vzG_400x400.jpg" alt="" width="50">
+        </div>
+
+
+        </div>
+
+        <div class="boxx2" 
+        style="width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        ">
+            <h2 
+            style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+            ;
+            font-size: 17px;
+            "
+            >What are you looking for</h2>
+
+
+            <div class="bosess" 
+            style="width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            /* padding: 30; */
+            padding-left: 30px;
+            padding-right: 30px;
+            "
+            >
+
+                <div class="bo1"
+                onclick="onfun()"
+                style="width: 40%;
+                background-color: snow;
+                border-radius: 20%;
+                padding: 10px;
+                box-shadow: 0px 0px 8px 2px rgb(202, 201, 201);
+                " 
+                >
+                    <ion-icon 
+                    style="color: white;
+                    background-color: blue;
+                    padding: 10px;
+                    border-radius: 50%;
+                    "
+                    name="airplane-sharp"></ion-icon>
+                    <h4
+                    style="font-family: Georgia, 'Times New Roman', Times, serif;
+                    font-size: 10px;
+                    "
+                    >Ship your package</h4>
+                    <p
+                    style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;" 
+                    > Compared to other freight transportation modes, air freight is the fastest mode of long-distance shipping</i>
+                </div>
+
+
+                
+                <div class="bo1"
+                onclick="onfun()"
+                style="width: 40%;
+                background-color: snow;
+                border-radius: 20%;
+                padding: 10px;
+                box-shadow: 0px 0px 8px 2px rgb(202, 201, 201);
+                " 
+                >
+                    <ion-icon 
+                    style="color: white;
+                    background-color: blue;
+                    padding: 10px;
+                    border-radius: 50%;
+                    "
+                    name="Location-sharp"></ion-icon>
+                    <h4 
+                    style="font-family: Georgia, 'Times New Roman', Times, serif;
+                    font-size: 10px;
+                    "
+                    >Track your shipment</h4>
+                    <p 
+                    style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;"
+                    > If you want to ship your freight around the world, logistics service is the most convenient option.</i>
+                </div>
+
+
+
+            </div>
+        </div>
+
+
+        <div class="boxx3" 
+        style="
+        background:linear-gradient(100deg,#5f3251,#cc5525);
+        bottom: 0;
+        width: 100%;
+        height: 60vh;
+        border-top-left-radius: 50px;
+        border-top-right-radius: 50px;
+    
+        ">
+
+<div class="con" 
+style="display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+color: white;
+gap: 10px;
+padding-top: 1.4rem;
+"
+>
+    <h3 
+    style="color:orange;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 12px;
+    "
+    >FAST AND SAFE</h3>
+    <h2
+    style="font-family: monospace;"
+    >NEWSLETTER SUBSCRIBE</h2>
+    <input
+    style="width: 80%;
+    padding: 15px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    "
+     type="email" placeholder="Enter Your Email Address">
+    <button 
+    style="width: 40%;
+    padding: 15px;
+    color: white;
+    background-color: orange;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    font-weight: 600;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    "
+    >SUBMIT NOW</button>
+</div>
+
+        </div>
+
+
+
+
+
+        
+    </div>
+
+
+
+
+    <!--  -->
+
+<script src="main.js"></script>
+
+<script>
+
+function onfun() {
+  document.getElementById("bb")
+  .style.visibility="visible";
+}
+
+</script>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
